@@ -105,3 +105,12 @@ hr{
   border: none;
   box-shadow: 15px 15px 3px rgb(153, 150, 150);
 }
+.negativebody{
+  background-color: red;
+}
+.positivebody{
+  background-color: yellow;
+}
+.neutralbody{
+  background-color: white;
+}

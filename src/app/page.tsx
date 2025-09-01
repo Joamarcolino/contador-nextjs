@@ -12,9 +12,9 @@ export default function Home() {
     console.log(numero)
   }
  function changebodycolor(){
-  if (numero < 0) return document.body.style.backgroundColor = "red"
-  if (numero > 0) return document.body.style.backgroundColor = "yellow"
-  else return document.body.style.backgroundColor = "white"
+  if (numero < 0) return "negativebody"
+  if (numero > 0) return  "positivebody"
+  else return  "neutralbody"
  }
  function changeelementscolor(){
    if (numero < 0) return 'negative'
@@ -26,8 +26,9 @@ export default function Home() {
    if (numero > 0) return 'positivelight'
    else return 'neutrallight'
  }
- changebodycolor()
   return (
+    <html>
+    <body className={changebodycolor()}>
     <div id="encapsulador">
       <main className={changecountershadow()} id='contador'>
         <h1 className={changeelementscolor()}>Contador</h1>
@@ -39,5 +40,7 @@ export default function Home() {
         </div>
       </main>
     </div>
+    </body>
+    </html>
   );
 }
