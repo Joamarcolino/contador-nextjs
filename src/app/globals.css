@@ -3,6 +3,14 @@
   box-sizing: border-box;
   margin: 0;
 }
+body{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
 #numero{
   font-size: 6rem;
 }
@@ -113,4 +121,51 @@ hr{
 }
 .neutralbody{
   background-color: white;
+}
+.reset{
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  margin: 0;
+  color: purple;
+  background: none;
+  transition: 1s ease-in-out;
+}
+.reset:hover{
+  background-color: rgb(20, 20, 20);
+  text-shadow: 1px 1px 5px purple;
+  transition: 1s ease-in-out;
+  text-transform:uppercase s;
+  animation:infinite ;
+}
+@keyframes boing{
+  10%{
+    scale: 1.0.1;
+  }
+  20%{
+    scale: 1;
+  }
+  30%{
+    scale: 1.0.1;
+  }
+    40%{
+    scale: 1.0.1;
+  }
+  50%{
+    scale: 1;
+  }
+  60%{
+    scale: 1.0.1;
+  }
+    70%{
+    scale: 1.0.1;
+  }
+  80%{
+    scale: 1;
+  }
+  90%{
+    scale: 1.0.1;
+  }
+  100%{
+    scale: 1;
+  }
 }

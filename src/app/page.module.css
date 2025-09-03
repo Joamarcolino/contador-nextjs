@@ -7,10 +7,11 @@ body{
   text-align: center;
   transition: 1s;
 }
-.negative{
-  color: red;
-}
-.positive{
-  color: gold;
-  text-shadow: 1px 1px 1px rgb(206, 175, 2);
+#geral{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
 }
